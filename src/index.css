@@ -1,13 +1,110 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+}
+#root {
+  position: relative;
+  width: 550px;
+  height: 950px;
+
+  background: #ffffff;
+  border-radius: 8.95px;
+}
+.navbar {
+  display: flex;
+  width: 550px;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 2.98256px 7.4564px hsla(0, 0%, 0%, 0.2);
+}
+.logo {
+  width: 82.02px;
+  height: 25.35px;
+
+  margin-left: 30px;
+  margin-top: 22px;
+  border-radius: 0px;
+}
+.heros {
+  width: 395.91px;
+  height: 232px;
+  padding-left: 77px;
+  padding-top: 26px;
+}
+.online-exp {
+  padding-left: 36px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+}
+.online-text {
+  padding-left: 36px;
+  width: 320px;
+  height: 56px;
+  font-family: "Poppins";
+
+  font-weight: 300;
+}
+
+cards {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  overflow-x: scroll;
+  width: 550px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.cards {
+  padding-top: 49px;
+  width: 176px;
+  height: 302px;
+  left: 36px;
+  top: 765px;
+  padding-left: 40px;
+}
+.katie {
+  /* position: absolute; */
+  width: 100%;
+  height: 235px;
+  left: 37px;
+  /* top: 521px; */
+  border-radius: 9px;
+}
+.star {
+  width: 14px;
+  height: 14px;
+}
+
+.description {
+  margin: 0px;
+  font-family: "Poppins";
+  font-size: 10px;
+}
+.cost {
+  margin: 0px;
+  font-family: "Poppins";
+  font-size: 15px;
 }
