@@ -24,7 +24,7 @@ body {
   position: relative;
   width: 550px;
   height: 950px;
-
+  overflow: hidden;
   background: #ffffff;
   border-radius: 8.95px;
 }
@@ -71,11 +71,8 @@ cards {
   display: flex;
   flex-direction: row;
   width: fit-content;
+  /* width: 550px; */
   overflow-x: scroll;
-  width: 550px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
 .cards {
   padding-top: 49px;
