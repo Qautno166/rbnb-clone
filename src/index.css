@@ -23,7 +23,7 @@ body {
 #root {
   position: relative;
   width: 550px;
-  height: 950px;
+  height: 1950px;
   overflow: hidden;
   background: #ffffff;
   border-radius: 8.95px;
@@ -67,24 +67,27 @@ body {
   font-weight: 300;
 }
 
-cards {
+.cards {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: row;
   width: fit-content;
-  /* width: 550px; */
+  width: 550px;
   overflow-x: scroll;
-}
-.cards {
+  flex-wrap: nowrap;
   padding-top: 49px;
-  width: 176px;
+  width: 100%;
   height: 302px;
   left: 36px;
   top: 765px;
   padding-left: 40px;
 }
+.all {
+  padding-left: 10px;
+}
 .katie {
   /* position: absolute; */
-  width: 100%;
+  width: 175px;
   height: 235px;
   left: 37px;
   /* top: 521px; */

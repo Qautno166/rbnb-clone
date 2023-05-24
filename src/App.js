@@ -1,42 +1,28 @@
 import React from "react";
 import Navbar from "./Navbar.js";
 import Hero from "./Hero.js";
+import cards from "./cardData.js";
 import Card from "./Card.js";
-import katie from "./katie.png";
-import wedding from "./weeding.png";
-import bike from "./bike.png";
 
 function App() {
+  const cardsElements = cards.map((cards) => {
+    return (
+      <Card
+        key={cards.id}
+        img={cards.img}
+        stars={cards.stars}
+        reviews={cards.reviews}
+        place={cards.place}
+        descr={cards.descr}
+        price={cards.price}
+      />
+    );
+  });
   return (
     <div>
       <Navbar />
       <Hero />
-      <cards>
-        <Card
-          img={katie}
-          stars="5.0"
-          reviews="6"
-          place="USA"
-          descr="Life lessons with Katie Zaferes"
-          price="From $136 / person"
-        />
-        <Card
-          img={wedding}
-          stars="5.0"
-          reviews="30"
-          place="USA"
-          descr="Learn wedding photography"
-          price="From $125 / person"
-        />
-        <Card
-          img={bike}
-          stars="4.8"
-          reviews="2"
-          place="USA"
-          descr="Group Mountain Biking"
-          price="From $50 / person"
-        />
-      </cards>
+      <section className="cards">{cardsElements} </section>
     </div>
   );
 }
